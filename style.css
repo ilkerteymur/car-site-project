@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.container{
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/bg.png);
+    
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+p{
+    font-size: 10px;
+    color: white;
+    line-height: 16px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: ease .5s;
+}
+
+nav ul li a:hover{
+    color: black;
+    
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 88%;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.col h1{
+    color: white;
+    font-size: 100px;
+}
+
+.desc{
+    font-size: 16px;
+}
+
+.btn{
+    padding:12px 28px ;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid red;
+    transition: ease .5s;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.cards{
+
+    max-width: 500px;
+    margin: auto;
+}
+
+.card{
+    border: 1px solid red;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    padding: 15px 25px;
+    position: relative;
+    margin: 10px 15px;
+    border-radius: 10px;
+    transition: ease .5s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+
+.cards .card-head{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.card-bottom{
+    position: absolute;
+    bottom: 14px;
+}
+
+.card.card-1{
+    background-image: url(images/pic-1.png);
+}
+.card.card-2{
+    background-image: url(images/pic-2.png);
+}
+.card.card-3{
+    background-image: url(images/pic-3.png);
+}
+.card.card-4{
+    background-image: url(images/pic-4.png);
+}
